@@ -13,5 +13,14 @@ L = s x s
 L = 20 x 20
 L = 400
 ```
-# Discord Group
+## Materi
+- [X] Rumus Luas
+- [X] Rumus Keliling
+- [X] Rumus Volume
+- [X] Rumus Debit
+- [X] Rumus Kecepatan
+- [X] Rumus Skala
+- [ ] Rumsu Panjang
+- [ ] Rumus Diagonal
+## Discord Group
 Join GuckProject Discord Group = https://bit.ly/guckproject
