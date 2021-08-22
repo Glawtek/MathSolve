@@ -13,3 +13,5 @@ L = s x s
 L = 20 x 20
 L = 400
 ```
+# Discord Group
+Join GuckProject Discord Group = https://bit.ly/guckproject
