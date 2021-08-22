@@ -20,7 +20,7 @@ L = 400
 - [X] Rumus Debit
 - [X] Rumus Kecepatan
 - [X] Rumus Skala
-- [ ] Rumsu Panjang
-- [ ] Rumus Diagonal
+- [ ] Rumus Panjang (Belum semua)
+- [ ] Rumus Diagonal (Belum semua)
 ## Discord Group
 Join GuckProject Discord Group = https://bit.ly/guckproject
