@@ -13,6 +13,8 @@ L = s x s
 L = 20 x 20
 L = 400
 ```
+## Masalah
+Jika ada masalah di MathSolve, seperti jawaban salah, rumusnya salah, atau ada kekurangan di MathSolve, mohon laporkan issue di https://github.com/Glawtek/MathSolve/issues
 ## Materi
 - [X] Rumus Luas
 - [X] Rumus Keliling
