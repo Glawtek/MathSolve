@@ -1,7 +1,7 @@
 # MathSolve
 MathSolve adalah package NPM beguna untuk menyelesaikan soal Matematika
-## Install
-```npm install mathsolve```
+
+This my Version Forked.
 ## Contoh
 ```js
 const msolve = require("mathsolve")
