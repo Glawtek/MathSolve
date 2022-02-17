@@ -1,6 +1,5 @@
 var result = "";
 var piCheck = 0;
-
 var KMtoCM = (km) => {
     km += "00000"
     return parseInt(km)
@@ -12,6 +11,58 @@ class lainnya {
         }
         return result;
     }
+    static pythagoras(opsi, sisi1, sisi2)
+    {
+if(opsi == "miring")
+{
+let fk = Math.sqrt(sisi1*sisi1 + sisi2*sisi2);
+result = `a = ${sisi1}^2 - ${sisi2}^2\na = ${sisi1 * sisi1} + ${sisi2 * sisi2}\na = akar kuadrat dari (${sisi1 * sisi1 + sisi2 * sisi2})\na = ${fk}`
+return result;
+}
+else if(opsi == "alas")
+{
+let fk = Math.sqrt(sisi1*sisi1 + sisi2*sisi2);
+result = `a = ${sisi1}^2 - ${sisi2}^2\na = ${sisi1 * sisi1} - ${sisi2 * sisi2}\na = akar kuadrat dari (${sisi1 * sisi1 - sisi2 * sisi2})\na = ${fk}`
+return result;  
+}
+else {
+    return result = `Opsi Tidak Ditemukan!`
+}
+    }
+
+static kuadrat(angka)
+{
+let fk = Math.sqrt(angka);
+result = `Akar Kuadrat dari ${angka}\n= ${fk}`
+return result;
+}
+static logaritma(angka)
+{
+let fk = Math.log(angka);
+result = `Logaritma dari ${angka}\n= ${fk}`
+return result;
+}
+}
+
+class trigonometri {
+static sin(angka)
+{
+let fk = Math.sin(angka);
+result = `Sin(${angka})\n= ${fk}`
+return result;
+}
+static cos(angka)
+{
+let fk = Math.cos(angka);
+result = `Cos(${angka})\n= ${fk}`
+return result;
+}
+static tan(angka)
+{
+let fk = Math.tan(angka);
+result = `Tan(${angka})\n= ${fk}`
+return result;
+}
 }
 
 class diagonal {
@@ -19,6 +70,7 @@ class diagonal {
         result = `d = √p^2 + l^2\nd = √${panjang}^2 + ${lebar}^2\nd = ${Math.sqrt((panjang * panjang) + (lebar * lebar))}`
         return result;
     }
+    
 }
 
 class panjang {
@@ -32,6 +84,21 @@ class panjang {
     }
 }
 
+class rumusData {
+    static mean(data1, data2, data3, data4, data5, data6, data7,data8, data9, data10) {
+        if(data5 == null) data5 = 0;
+        if(data6 == null) data6 = 0;
+        if(data7 == null) data7 = 0;
+        if(data8 == null) data8 = 0;
+        if(data9 == null) data9 = 0;
+        if(data10 == null) data10 = 0;
+        result = `∑X = Rata-Rata\n∑X = ${data1 + data2 + data3 + data4 + data5 + data6 + data7 + data8 + data9 + data10}
+Hasil Rata-Rata :
+∑X = ${data1 + data2 + data3 + data4 + data5 + data6 + data7 + data8 + data9 + data10} / 10
+∑X = ${(data1 + data2 + data3 + data4 + data5 + data6 + data7 + data8 + data9 + data10) / 10}`;
+        return result;
+    }
+}
 class keliling {
     static persegiPanjang(panjang, lebar) {
         result = `K = 2 x (p + L)\nK = 2 x (${panjang} + ${lebar})\nK = 2 x ${panjang + lebar}\nK = ${2 * (panjang + lebar)}`
@@ -118,8 +185,22 @@ class luas {
         result = `L = (2 x p x l) + (2 x p x t) + (2 x l x t)\nL = (2 x ${panjang} x ${lebar}) + (2 x ${panjang} x ${tinggi}) + (2 x ${lebar} x ${tinggi})\nL = ${2 * panjang * lebar} + ${2 * panjang * tinggi} + ${2 * lebar * tinggi}\nL = ${(2 * panjang * lebar) + (2 * panjang * tinggi) + (2 * lebar * tinggi)}`
         return result;
     }
+    static layangLayang(d1, d2) {
+        result = `L = 1/2 x d1 x d2\nL = 1/2 x ${d1} x ${d2}\nL = ${1/2 * d1 * d2}`
+        return result;
+    }
 }
-
+class luaspermukaan {
+    static prismasegitiga(panjang, lebar, tinggi) {
+        result = `LP = 2x(panjang x lebar) + (panjang x tinggi) + (lebar x tinggi)\nLP = 2x(${panjang} x ${lebar}) + (${panjang} x ${tinggi}) + (${lebar} x ${tinggi})\nLP = ${2 * panjang * lebar} + ${panjang * tinggi} + ${lebar * tinggi}\nLP = ${2 * panjang * lebar + panjang * tinggi + lebar * tinggi}`
+        return result;
+    }
+    static prismasegiempat(panjang,lebar,tinggi)
+    {
+        result = `LP = 2x((p x l) + (p x t) + (l x t))\nLP = 2x((${panjang} x ${lebar}) + (${panjang} x ${tinggi}) + (${lebar} x ${tinggi}))\nLP = ${2 * (panjang * lebar + panjang * tinggi + lebar * tinggi)}`
+        return result;
+    }
+}
 class volume {
     static kubus(rusuk) {
         result = `V = r x r x r\nV = ${rusuk} x ${rusuk} x ${rusuk}\nV = ${rusuk * rusuk * rusuk}`
@@ -129,6 +210,42 @@ class volume {
         result = `V = p x l x t\nV = ${panjang} x ${lebar} x ${tinggi}\nV = ${panjang * lebar * tinggi}`
         return result;
     }
+    static tabung(jarijari, tinggi)
+    {
+        result = `V = 22/7 x r x r x t\nV = 22/7 x ${jarijari} x ${jarijari} x ${tinggi}\nV = 22/7 x ${jarijari * jarijari * tinggi}\nV = ${(22 / 7) * jarijari * jarijari * tinggi}`
+        return result;
+    }
+    static kerucut(jarijari, tinggi)
+    {
+        result = `V = 1/3 x 22/7 x r x r x t\nV = 1/3 x 22/7 x ${jarijari} x ${jarijari} x ${tinggi}\nV = 1/3 x 22/7 x ${jarijari * jarijari * tinggi}\nV = ${(1 / 3) * (22 / 7) * jarijari * jarijari * tinggi}`
+        return result;
+    }
+    static bola(jarijari)
+    {
+        result = `V = 4/3 x 22/7 x r x r x r\nV = 4/3 x 22/7 x ${jarijari} x ${jarijari} x ${jarijari}\nV = 4/3 x 22/7 x ${jarijari * jarijari * jarijari}\nV = ${(4 / 3) * (22 / 7) * jarijari * jarijari * jarijari}`
+        return result;
+    }
+    static limassegitiga(tinggialas, tinggilimas, alas)
+    {
+       result = `V = 1/3 x Alas x t\nV = 1/3 x (1/2 x alas x tinggialas) x tinggilimas\nV = 1/3 x (1/2 x ${alas} x ${tinggialas}) x ${tinggilimas}\nV = ${(1 / 3) * (alas * tinggialas) * tinggilimas}`
+         return result;
+    }
+    static limassegiempat(panjang,lebar,tinggi)
+    {
+        result = `V = 1/3 x panjang x lebar x tinggi\nV = 1/3 x ${panjang} x ${lebar} x ${tinggi}\nV = 1/3 x ${panjang * lebar * tinggi}\nV = ${(1 / 3) * (panjang * lebar * tinggi)}`
+        return result;
+    }
+static prismasegitiga(alas, tinggi, tinggiprisma)
+{
+    result = `V = (1/2 x alas x tinggi) x tinggiprisma\nV = (1/2 x ${alas} x ${tinggi}) x ${tinggiprisma}\nV = ${(1 / 2) * (alas * tinggi) * tinggiprisma}`
+    return result;
+}
+static prismasegiempat(panjang,tinggi,lebar)
+{
+result = `V = panjang x lebar x tinggi\nV = ${panjang} x ${lebar} x ${tinggi}\nV = ${panjang * lebar * tinggi}`
+return result;
+}
+
 }
 
 class rumusKecepatan {
@@ -180,8 +297,10 @@ module.exports = {
     diagonal : diagonal,
     panjang : panjang,
     luas : luas,
+    trigonometri,trigonometri,
     keliling : keliling,
     volume : volume,
+    luaspermukaan: luaspermukaan,
     rumusKecepatan : rumusKecepatan,
     rumusDebit : rumusDebit,
     rumusSkala : rumusSkala,
