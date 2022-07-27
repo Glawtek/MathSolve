@@ -24,5 +24,3 @@ Jika ada masalah di MathSolve, seperti jawaban salah, rumusnya salah, atau ada k
 - [X] Rumus Skala
 - [ ] Rumus Panjang (Belum semua)
 - [ ] Rumus Diagonal (Belum semua)
-## Discord Group
-Join GuckProject Discord Group = https://bit.ly/guckproject
